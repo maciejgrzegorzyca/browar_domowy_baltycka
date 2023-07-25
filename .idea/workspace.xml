@@ -5,9 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bcdcd64e-1ca5-4f9a-bfd0-d71d43e05808" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/batches/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/browar_domowy_baltycka/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/browar_domowy_baltycka/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/batches/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/batches/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/browar_domowy_baltycka/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/browar_domowy_baltycka/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,6 +101,7 @@
       <workItem from="1689340413055" duration="4172000" />
       <workItem from="1689771736138" duration="616000" />
       <workItem from="1689932755205" duration="559000" />
+      <workItem from="1690283983644" duration="1161000" />
     </task>
     <servers />
   </component>
