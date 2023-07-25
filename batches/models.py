@@ -7,3 +7,8 @@ class Batch(models.Model):
     ogbatch = models.FloatField(max_length=4, null=False)
     abvbatch = models.FloatField(max_length=4, null=False)
     ibubatch = models.FloatField(max_length=4, null=False)
+
+
+#Change view in admin panel - setup in admin.py
+    # def __str__(self):
+    #     return f"{self.namebatch} - {self.stylebatch}"
