@@ -7,5 +7,15 @@
 <body>
     <h1> Batches list</h1>
         <p> this is list of batches</p>
+    <u1>
+        {% for x in mybatches %}
+        <li>
+            Batch: {{ x.namebatch }}, Style: {{  x.stylebatch }}
+
+        {% endfor %}
+        </li>
+
+    </u1>
+
 </body>
 </html>
