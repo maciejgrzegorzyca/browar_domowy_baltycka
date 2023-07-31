@@ -9,8 +9,8 @@
         <p> this is list of batches</p>
     <u1>
         {% for x in mybatches %}
-        <li>
-            Batch: {{ x.namebatch }}, Style: {{  x.stylebatch }}
+        <li><a href="details/{{ x.id }}">Batch: {{ x.namebatch }}, Style: {{  x.stylebatch }}</a>
+
 
         {% endfor %}
         </li>
