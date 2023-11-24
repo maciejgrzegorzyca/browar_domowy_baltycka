@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     # Add new applications
     "batches.apps.BatchesConfig",
+    "pages.apps.PagesConfig"
 ]
 
 MIDDLEWARE = [

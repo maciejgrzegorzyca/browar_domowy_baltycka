@@ -5,20 +5,17 @@ from .models import Batch
 
 def batches(request):
     mybatches = Batch.objects.all().values()
-    template = loader.get_template('batches.html')
+    template = loader.get_template('batchespage.html')
 
     context = {'mybatches': mybatches}
 
     return HttpResponse(template.render(context, request))
 
 
-    # template = loader.get_template("batches.html")
-    # return HttpResponse(template.render())
-
 
 def details(request, id):
     mybatches = Batch.objects.get(id=id)
-    template = loader.get_template('details.html')
+    template = loader.get_template('detailspage.html')
 
     context = {'mybatches': mybatches}
 
