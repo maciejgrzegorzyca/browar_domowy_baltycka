@@ -6,4 +6,7 @@ from django.template import loader
 # Create your views here.
 def homepage(request):
  
-     return render(request, "homepage.html", {})
+     return render(request, "home.html", {})
+
+def showpage(request):
+          return render(request, "hb_show.html", {})

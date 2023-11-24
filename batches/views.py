@@ -5,7 +5,7 @@ from .models import Batch
 
 def batches(request):
     mybatches = Batch.objects.all().values()
-    template = loader.get_template('batchespage.html')
+    template = loader.get_template('batches_list.html')
 
     context = {'mybatches': mybatches}
 
@@ -15,7 +15,7 @@ def batches(request):
 
 def details(request, id):
     mybatches = Batch.objects.get(id=id)
-    template = loader.get_template('detailspage.html')
+    template = loader.get_template('batch_detail.html')
 
     context = {'mybatches': mybatches}
 
