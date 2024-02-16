@@ -7,6 +7,7 @@ class Batch(models.Model):
     ogbatch = models.FloatField(max_length=4, null=False)
     abvbatch = models.FloatField(max_length=4, null=False)
     ibubatch = models.FloatField(max_length=4, null=False)
+    image = models.FileField(upload_to="static/images/", blank=True)
 
 
 #Change view in admin panel - setup in admin.py

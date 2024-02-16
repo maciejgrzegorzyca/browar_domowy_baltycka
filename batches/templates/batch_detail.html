@@ -10,7 +10,9 @@
 <p>OG: {{ mybatches.ogbatch }}</p>
 <p>ABV: {{ mybatches.abvbatch }}</p>
 <p>IBU: {{ mybatches.ibubatch }}</p>
-
+    {% if mybatches.image %}
+    <img src="{{ mybatches.image.url }}" style="width:500px;height:600px;">
+    {% endif %}
 <p> Back to <a href="/batches">Batches</a> </p>
 
 </body>
