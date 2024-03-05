@@ -23,4 +23,4 @@ class CategoryAdmin(admin.ModelAdmin):
 
 @admin.register(Blog_add)
 class BlogAdmin(admin.ModelAdmin):
-    list_display = ('blog_add_category', 'blog_title', 'blog_description')
+    list_display = ('id', 'blog_add_category', 'blog_title', 'blog_description')

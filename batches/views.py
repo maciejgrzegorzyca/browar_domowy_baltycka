@@ -3,9 +3,9 @@ from django.http import HttpResponse
 from django.template import loader
 from .models import Batch
 
-def batches(request):
-    mybatches = Batch.objects.all().values()
-    template = loader.get_template('batches_list.html')
+def batches_home(request):
+    mybatches = Batch.objects.all()
+    template = loader.get_template('batches_home.html')
 
     context = {'mybatches': mybatches}
 
@@ -13,7 +13,7 @@ def batches(request):
 
 
 
-def details(request, id):
+def batches_detail(request, id):
     mybatches = Batch.objects.get(id=id)
     template = loader.get_template('batch_detail.html')
 
