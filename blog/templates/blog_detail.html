@@ -7,8 +7,9 @@
 <body>
 <h1> {{ mycomments.blog_title }} </h1>
 <p>Kategoria  {{ mycomments.blog_add_category }}</p>
-<p>{{ mycomments.blog_description }}</p>
-
+    
+    {{ mycomments.blog_description | safe }}
+    
     {% if mycomments.image %}
     <img src="{{ mycomments.image.url }}" style="width:500px;height:600px;">
     {% endif %}

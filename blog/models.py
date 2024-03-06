@@ -14,5 +14,5 @@ class Blog_add(models.Model):
     # Fields
     blog_add_category = models.ForeignKey(Category, on_delete=models.CASCADE, default=None, null=False)
     blog_title = models.CharField(max_length=26, null=True)
-    blog_description = models.CharField(max_length=266, blank=True)
+    blog_description = models.TextField(blank=True)
 
