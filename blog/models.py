@@ -15,4 +15,5 @@ class Blog_add(models.Model):
     blog_add_category = models.ForeignKey(Category, on_delete=models.CASCADE, default=None, null=False)
     blog_title = models.CharField(max_length=26, null=True)
     blog_description = models.TextField(blank=True)
+    image = models.FileField(upload_to="static/images/blog/", blank=True)
 

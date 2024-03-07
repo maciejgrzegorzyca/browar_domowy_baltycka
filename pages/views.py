@@ -10,5 +10,5 @@ def homepage(request):
 def showpage(request):
           return render(request, "hb_show.html", {})
 
-def reviewpage(request):
-          return render(request, "style_review.html", {})
+# def reviewpage(request):
+          # return render(request, "style_review.html", {})
