@@ -7,7 +7,7 @@
 <body>
     <h1> Batches list</h1>
         <p> this is list of batches</p>
-    <u1>
+    {% comment %} <u1>
         {% for x in mybatches %}
         <li><a href="details/{{ x.id }}">Batch: {{ x.namebatch }}, Style: {{  x.stylebatch }}</a>
 
@@ -15,7 +15,16 @@
         {% endfor %}
         </li>
 
-    </u1>
+    </u1> {% endcomment %}
+
+    {% for bat in object_list %}
+        <li><a href="{{ bat.id }}"> {{ bat.id }}, Name: {{bat.namebatch }} , Style: {{ bat.stylebatch }} </a>
+        </li>
+
+     {% empty %}
+        <li> No batches yet </li>
+        
+    {% endfor %}
 
 </body>
 </html>

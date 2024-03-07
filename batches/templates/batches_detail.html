@@ -1,0 +1,40 @@
+{% comment %} <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ mybatches.namebatch }}</title>
+</head>
+<body>
+<h1> {{ mybatches.namebatch }} </h1>
+<p>Style: {{ mybatches.stylebatch }}</p>
+<p>OG: {{ mybatches.ogbatch }}</p>
+<p>ABV: {{ mybatches.abvbatch }}</p>
+<p>IBU: {{ mybatches.ibubatch }}</p>
+    {% if mybatches.image %}
+    <img src="{{ mybatches.image.url }}" style="width:500px;height:600px;">
+    {% endif %}
+<p> Back to <a href="/batches">Batches</a> </p>
+
+</body>
+</html> {% endcomment %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ object.namebatch }}</title>
+</head>
+<body>
+<h1> {{ object.namebatch }} </h1>
+<p>Style: {{ object.stylebatch }}</p>
+<p>OG: {{ object.ogbatch }}</p>
+<p>ABV: {{ object.abvbatch }}</p>
+<p>IBU: {{ object.ibubatch }}</p>
+    {% if object.image %}
+    <img src="{{ object.image.url }}" style="width:500px;height:600px;">
+    {% endif %}
+<p> Back to <a href="/batches">Batches</a> </p>
+
+</body>
+</html>
