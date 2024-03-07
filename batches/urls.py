@@ -9,7 +9,7 @@ from .views import (
 
 urlpatterns = [
     
-    #function view urls
+   #function view urls
    # path('', views.batches_home, name='batches_home'),
    # path('details/<int:id>', views.batches_detail, name='batches_detail'),
 
@@ -17,5 +17,7 @@ urlpatterns = [
    #Class Based View urls
    path('', BatchesHome.as_view(), name='batches_home'),
    path('<int:pk>/', BatchesDetail.as_view(), name='batches_detail'),
+
+   
    ]
 

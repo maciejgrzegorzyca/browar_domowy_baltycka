@@ -2,16 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>{{ mycomments.blog_title }}</title>
+    <title>{{ object.blog_title }}</title>
 </head>
 <body>
-<h1> {{ mycomments.blog_title }} </h1>
-<p>Kategoria  {{ mycomments.blog_add_category }}</p>
+<h1> {{ object.blog_title }} </h1>
+<p>Kategoria  {{ object.blog_add_category }}</p>
     
-    {{ mycomments.blog_description | safe }}
+    {{ object.blog_description | safe }}
     
-    {% if mycomments.image %}
-    <img src="{{ mycomments.image.url }}" style="width:500px;height:600px;">
+    {% if object.image %}
+    <img src="{{ object.image.url }}" style="width:500px;height:600px;">
     {% endif %}
 <p> Back to <a href="/blog">Blog</a> </p>
 

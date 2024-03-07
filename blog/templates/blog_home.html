@@ -8,9 +8,12 @@
     <h1> Blog adds</h1>
         <p> this is list of blog comments</p>
     <u1>
-        {% for y in mycomments %}
-        <li><a href="details/{{ y.id }}"> {{ y.blog_title }}, kategoria: {{  y.blog_add_category }}</a>
+        {% for blo in object_list %}
+        <li><a href="{{ blo.id }}"> {{ blo.id }} {{ blo.blog_title }}, kategoria: {{  blo.blog_add_category }}</a>
         
+        {% empty %}
+        <li> No batches yet </li>
+
         {% endfor %}
         </li>
 
