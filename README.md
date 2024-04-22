@@ -3,3 +3,5 @@ Website of Home Brewery BAŁTYCKA
 - HTML
 - CSS
 - JAVA
+
+checking git
